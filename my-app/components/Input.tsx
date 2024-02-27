@@ -13,7 +13,7 @@ const Input = ({title, placeholder} : {title:string, placeholder:string}) => {
 
 const styles = StyleSheet.create({
     container: {
-        margin: 8,
+        marginLeft:30,
     },
     input: {
         height: 40,

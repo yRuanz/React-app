@@ -9,15 +9,15 @@ const Login = () => {
      
     <View style={styles.container}>
         <View>
-            <Status title="Cadastre-se"/>
+            <Status title="Login"/>
             <View style={styles.menuLogin}>
-                <Input title={"Nome:"} placeholder={"Insira seu nome:"}/>
-                <Input title={"Sobrenome:"} placeholder={"Insira seu sobrenome:"}/>
+                <Text style={styles.slogan}>Faça login para acessar o sistema!</Text>
                 <Input title={"Email:"} placeholder={"Insira seu email:"}/>
-                <Input title={"Telefone:"} placeholder={"Insira seu telefone:"}/>
-                <Input title={"Senha:"} placeholder={"Insira seu Senha:"}/>
-                <Input title={"Confirmar senha:"} placeholder={"Confirme sua senha:"}/>
+                <Input title={"Senha:"} placeholder={"Insira sua senha:"}/>
                 <Botao title="Cadastre-se"/>
+                <View style={styles.linkText}>
+                    <Text style={{color:'blue'}}>Cadastre-se</Text><Text style={{color:'blue'}}>Esqueceu a senha?</Text>
+                </View>
             </View>
         </View>
     </View>
@@ -26,7 +26,7 @@ const Login = () => {
 
   const styles = StyleSheet.create({
     container:{
-        backgroundColor: '#ff0000',
+        backgroundColor: '#000000',
         },
 
     menuLogin:{

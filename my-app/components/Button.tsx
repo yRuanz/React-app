@@ -1,10 +1,11 @@
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 
-const Botao = () => {
+const Botao = ({title} : {title:string}) => {
+
     return (
         <View>
             <TouchableOpacity style={styles.button}>
-                <Text style={styles.buttonText}>Acessar</Text>
+                <Text style={styles.buttonText}>{title}</Text>
             </TouchableOpacity>
       </View>
     );
@@ -16,8 +17,8 @@ const Botao = () => {
       backgroundColor: 'black',
       padding: 10,
       borderRadius: 5,
-      marginTop: 10,
-      marginHorizontal:20,
+      marginTop: 20,
+      marginHorizontal:32,
     },
   
     buttonText: {

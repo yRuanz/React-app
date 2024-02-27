@@ -2,7 +2,7 @@ import React from "react";
 import { View,StyleSheet, Text, TextInput,TouchableOpacity} from "react-native";
 import Botao from "../components/Button";
 import Status from "../components/StatusBar";
-import Input from "../components/input";
+import Input from "../components/Input";
 
 const Recuperacao = () => {
     return (
@@ -10,9 +10,9 @@ const Recuperacao = () => {
     <View style={styles.container}>
         <Status title='Recuperação de Senha'/>
         <View style={styles.menuRecup}>
-            <Text style={styles.menuRecup}>Insira seu e-mail para recuperar a senha!</Text>
-            <Input title={"Email"} placeholder={"Insira seu email"} />
-            <Botao />
+            <Text style={styles.slogan}>Insira seu e-mail para recuperar a senha!</Text>
+            <Input title={"Email:"} placeholder={"Insira seu email"}/>
+            <Botao title="Acessar" />
         </View>
     </View>
     );
@@ -28,23 +28,21 @@ const Recuperacao = () => {
         textAlign: 'center',
         color: 'white',
         fontSize:20,
-    },
-
-    menuRecup: {
-        flex: 1,
-        backgroundColor: '#ffff',
-        paddingTop:20,
-        textAlign: 'center',
         fontWeight:'bold',
     },
 
-    input:{
-        margin: 15,
-        borderBottomWidth: 1,
-        padding: 10,
-        marginBottom: 10,
-        color: '#575757',
-      },
+    menuRecup: {
+        backgroundColor: '#ffff',
+        paddingTop:20,
+        fontWeight:'bold',
+    },
+
+    slogan:{
+        marginTop:15,
+        textAlign: 'center',
+        paddingVertical:20,
+        fontSize:19,
+    }
 });
 
 export default Recuperacao;
