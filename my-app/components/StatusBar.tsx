@@ -13,9 +13,11 @@ const Status =  ({ title } : {title: string}) => {
 
 const styles = StyleSheet.create({
   container: {
+    width:'100%',
+    height:200,
+    padding:60,
     alignItems: 'center',
     justifyContent: 'center',
-    padding:60,
   },
 
   logo:{
