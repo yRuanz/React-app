@@ -11,7 +11,7 @@ const Inventario = () => {
             <View style={styles.navbar}>
                 <Text><Entypo name="menu" size={30} color="black" /></Text><Text><AntDesign name="search1" size={30} color="black" /></Text>
             </View>
-            <View style={styles.itens}>
+            <View>
                 <ScrollView>
                     <Itens id="956389" item="CADEIRA SENAS" />
                     <Itens id="956389" item="CADEIRA SENAS" />
@@ -70,10 +70,6 @@ const styles = StyleSheet.create({
         backgroundColor:'#ff0000',
         top:820,
     },
-
-    itens:{
-        alignItems:'flex-start'
-    }
 
 })
 
