@@ -1,41 +1,58 @@
-import React from "react";
-import { View, TextInput, TextInputProps, Text, StyleSheet} from "react-native";
-import { StatusBar } from "expo-status-bar";
-import { Entypo, AntDesign,FontAwesome6,FontAwesome } from '@expo/vector-icons';
+import React from 'react';
+import { View, StyleSheet } from 'react-native';
+import { FontAwesome5, FontAwesome6 } from '@expo/vector-icons';
 
-interface InputProps extends TextInputProps{
-  title: string
+type RodapeProps = {
+    backgroundColor: string;
+    iconColor: string;
+    border: boolean;
 }
 
-const Rodape = () => {
-  return (
-    <View style={styles.display}>
-        <View style={styles.footer}>
-            <Text><FontAwesome6 name="camera-rotate" size={30} color="black" /></Text><Text><FontAwesome name="list-ol" size={30} color="black" /></Text>
-        </View>
-    </View>
-  )
-}
-
-const styles = StyleSheet.create({
-  container: {
-    margin: 8,
-    marginHorizontal: 15
-},
-  footer:{
-    position:'absolute',
-    height:60,
-    width:'100%',
-    flexDirection:'row',
-    alignItems:'center',
-    justifyContent:'center',
-    gap:20,
-    backgroundColor:'#ffff',
-    top:750,
-},
-display:{
-    borderBottomColor:'#F5F5F5',
-    borderBottomWidth:2,
-},
+function Rodape({ backgroundColor, iconColor, border }: RodapeProps) {
+    const styles = StyleSheet.create({
+        container: {
+            position: 'absolute',
+            bottom: 0,
+            width: "100%",
+            height: 70,
+            flexDirection: "row",
+            justifyContent: "center",
+            alignItems: "center",
+            gap: 30,
+            paddingBottom: 10,
+            borderBottomColor: '#CBCBCB',
+        },
+        display: {
+            position: 'absolute',
+            bottom: 0,
+            width: "100%",
+            height:70,
+            flexDirection: "row",
+            justifyContent: "center",
+            alignItems: "center",
+            gap: 30,
+            paddingTop: 10,
+        },
+        addButtonContainer: {
+            position: "absolute",
+            bottom: 20,
+            right: 0,
+            margin: 20,
+            marginBottom: 60,
+            height: 60,
+        },
     });
+
+    return (
+        <>
+            <View style={{ ...styles.container, backgroundColor: backgroundColor, borderBottomWidth: border ? 1 : 0 }}>
+                <View style={styles.display}>
+                    <FontAwesome6 name="camera-rotate" size={30} color={iconColor} />
+                    <FontAwesome5 name="list-ol" size={30} color={iconColor} />
+                </View>
+            </View>
+        </>
+    );
+}
+
 export default Rodape;

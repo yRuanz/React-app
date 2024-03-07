@@ -3,17 +3,24 @@ import { View,StyleSheet,Text, ScrollView } from "react-native";
 import Cabecalho from "../components/header";
 import Rodape from "../components/footer";
 import { StatusBar } from "expo-status-bar";
-import { AntDesign} from '@expo/vector-icons';
+import InputLabel from "../components/InputLabel";
+
 
 const AdicionarItens = () => {
     return(
         <View style={styles.container}>
-
             <View style={styles.navbar}>
                 <Cabecalho title="Cadastro de Itens" />
             </View>
             <View>
-                <Rodape />
+                <InputLabel Label={"N° Inventário"} />
+                <InputLabel Label="Descrição" />
+                <InputLabel Label="Local" /> 
+                <InputLabel Label="Responsável" /> 
+                <InputLabel Label="Data de Registro" /> 
+            </View>
+            <View style={styles.footer}>
+                <Rodape backgroundColor={"white"} iconColor={"black"} border={false} />
             </View>
                 
         </View>
@@ -29,20 +36,11 @@ const styles = StyleSheet.create({
         width:'100%',
         flexDirection:'row',
         justifyContent:'space-between',
-        paddingHorizontal:15,
     },
 
     footer:{
-        position:'absolute',
-        height:60,
-        width:'100%',
-        flexDirection:'row',
-        alignItems:'center',
-        justifyContent:'center',
-        gap:20,
-        top:750,
-    },
-
+        paddingTop:240
+    }
 })
 
 export default AdicionarItens

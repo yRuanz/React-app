@@ -11,7 +11,7 @@ const Recuperacao = () => {
         <Status title='Recuperação de Senha'/>
         <View style={styles.menuRecup}>
             <Text style={styles.slogan}>Insira seu e-mail para recuperar a senha!</Text>
-            <Inputs title={"Email:"} placeholder={"Insira seu email"}/>
+            <Inputs Label={"Email:"} placeholder={"Insira seu email"}/>
             <Botao title="Acessar" />
         </View>
     </View>

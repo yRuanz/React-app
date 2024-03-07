@@ -11,12 +11,12 @@ const Login = () => {
         <View>
             <Status title="Cadastre-se"/>
             <View style={styles.menuLogin}>
-                <Inputs title={"Nome:"} placeholder={"Insira seu nome:"}/>
-                <Inputs title={"Sobrenome:"} placeholder={"Insira seu sobrenome:"}/>
-                <Inputs title={"Email:"} placeholder={"Insira seu email:"}/>
-                <Inputs title={"Telefone:"} placeholder={"Insira seu telefone:"}/>
-                <Inputs title={"Senha:"} placeholder={"Insira seu Senha:"} secureTextEntry/>
-                <Inputs title={"Confirmar senha:"} placeholder={"Confirme sua senha:"} secureTextEntry/>
+                <Inputs Label={"Nome:"} placeholder={"Insira seu nome:"}/>
+                <Inputs Label={"Sobrenome:"} placeholder={"Insira seu sobrenome:"}/>
+                <Inputs Label={"Email:"} placeholder={"Insira seu email:"}/>
+                <Inputs Label={"Telefone:"} placeholder={"Insira seu telefone:"}/>
+                <Inputs Label={"Senha:"} placeholder={"Insira seu Senha:"} secureTextEntry/>
+                <Inputs Label={"Confirmar senha:"} placeholder={"Confirme sua senha:"} secureTextEntry/>
                 <Botao title="Cadastre-se"/>
             </View>
         </View>

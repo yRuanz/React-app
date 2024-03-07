@@ -2,6 +2,7 @@ import React from "react";
 import { View, TextInput, TextInputProps, Text, StyleSheet} from "react-native";
 import { StatusBar } from "expo-status-bar";
 import { Entypo, AntDesign,FontAwesome6,FontAwesome } from '@expo/vector-icons';
+import ExpoStatusBar from "expo-status-bar/build/ExpoStatusBar";
 
 interface InputProps extends TextInputProps{
   title: string
@@ -10,7 +11,7 @@ interface InputProps extends TextInputProps{
 const Cabecalho = ({ title, ...props}: InputProps) => {
   return (
     <View style={styles.navbar}>
-      <Text><Entypo name="menu" size={30} color="black" /></Text><Text>{title}</Text><Text><AntDesign name="search1" size={30} color="black" /></Text>
+      <Text><AntDesign name="arrowleft" size={30} color="white" /></Text><Text style={styles.texto}>{title}</Text><Text><AntDesign name="pluscircleo" size={30} color="white" /></Text>
     </View>
   );
 }
@@ -18,17 +19,20 @@ const Cabecalho = ({ title, ...props}: InputProps) => {
 const styles = StyleSheet.create({
   container: {
     margin: 8,
-    marginHorizontal: 15
+    marginHorizontal: 15,
   },
   navbar: {
-    height: 110,
+    height: 70,
     width: '100%',
-    paddingTop: 60,
     flexDirection: 'row',
+    alignItems:'center',
     justifyContent: 'space-between',
     backgroundColor:'#ff0000',
     paddingHorizontal: 15,
   },
+  texto: {
+    color:'white'
+  }
 });
 
 export default Cabecalho;

@@ -12,8 +12,8 @@ const Login = () => {
             <Status title="Login"/>
             <View style={styles.menuLogin}>
                 <Text style={styles.slogan}>Faça login para acessar o sistema!</Text>
-                <Inputs title={"Email:"} placeholder={"Insira seu email:"}/>
-                <Inputs title={"Senha:"} placeholder={"Insira sua senha:"} secureTextEntry/>
+                <Inputs Label={"Email:"} placeholder={"Insira seu email:"}/>
+                <Inputs Label={"Senha:"} placeholder={"Insira sua senha:"} secureTextEntry/>
                 <Botao title="Cadastre-se"/>
                 <View style={styles.linkText}>
                     <Text style={{color:'blue'}}>Cadastre-se</Text><Text style={{color:'blue'}}>Esqueceu a senha?</Text>
