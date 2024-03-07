@@ -2,7 +2,7 @@ import React from "react";
 import { View,StyleSheet, Text, TextInput,TouchableOpacity} from "react-native";
 import Botao from "../components/Button";
 import Status from "../components/StatusBar";
-import Input from "../components/Input";
+import Inputs from "../components/Input";
 
 const Recuperacao = () => {
     return (
@@ -11,7 +11,7 @@ const Recuperacao = () => {
         <Status title='Recuperação de Senha'/>
         <View style={styles.menuRecup}>
             <Text style={styles.slogan}>Insira seu e-mail para recuperar a senha!</Text>
-            <Input title={"Email:"} placeholder={"Insira seu email"}/>
+            <Inputs title={"Email:"} placeholder={"Insira seu email"}/>
             <Botao title="Acessar" />
         </View>
     </View>

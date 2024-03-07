@@ -2,7 +2,7 @@ import React from "react";
 import { View,StyleSheet, Text, TextInput,TouchableOpacity} from "react-native";
 import Botao from "../components/Button";
 import Status from "../components/StatusBar";
-import Input from "../components/Input";
+import Inputs from "../components/Input";
 
 const Login = () => {
     return (
@@ -12,8 +12,8 @@ const Login = () => {
             <Status title="Login"/>
             <View style={styles.menuLogin}>
                 <Text style={styles.slogan}>Faça login para acessar o sistema!</Text>
-                <Input title={"Email:"} placeholder={"Insira seu email:"}/>
-                <Input title={"Senha:"} placeholder={"Insira sua senha:"}/>
+                <Inputs title={"Email:"} placeholder={"Insira seu email:"}/>
+                <Inputs title={"Senha:"} placeholder={"Insira sua senha:"} secureTextEntry/>
                 <Botao title="Cadastre-se"/>
                 <View style={styles.linkText}>
                     <Text style={{color:'blue'}}>Cadastre-se</Text><Text style={{color:'blue'}}>Esqueceu a senha?</Text>

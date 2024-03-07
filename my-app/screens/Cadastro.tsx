@@ -2,7 +2,7 @@ import React from "react";
 import { View,StyleSheet, Text, TextInput,TouchableOpacity} from "react-native";
 import Botao from "../components/Button";
 import Status from "../components/StatusBar";
-import Input from "../components/Input";
+import Inputs from "../components/Input";
 
 const Login = () => {
     return (
@@ -11,12 +11,12 @@ const Login = () => {
         <View>
             <Status title="Cadastre-se"/>
             <View style={styles.menuLogin}>
-                <Input title={"Nome:"} placeholder={"Insira seu nome:"}/>
-                <Input title={"Sobrenome:"} placeholder={"Insira seu sobrenome:"}/>
-                <Input title={"Email:"} placeholder={"Insira seu email:"}/>
-                <Input title={"Telefone:"} placeholder={"Insira seu telefone:"}/>
-                <Input title={"Senha:"} placeholder={"Insira seu Senha:"}/>
-                <Input title={"Confirmar senha:"} placeholder={"Confirme sua senha:"}/>
+                <Inputs title={"Nome:"} placeholder={"Insira seu nome:"}/>
+                <Inputs title={"Sobrenome:"} placeholder={"Insira seu sobrenome:"}/>
+                <Inputs title={"Email:"} placeholder={"Insira seu email:"}/>
+                <Inputs title={"Telefone:"} placeholder={"Insira seu telefone:"}/>
+                <Inputs title={"Senha:"} placeholder={"Insira seu Senha:"} secureTextEntry/>
+                <Inputs title={"Confirmar senha:"} placeholder={"Confirme sua senha:"} secureTextEntry/>
                 <Botao title="Cadastre-se"/>
             </View>
         </View>

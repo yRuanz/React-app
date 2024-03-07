@@ -1,11 +1,16 @@
+import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { View, TextInput, StyleSheet, Text } from 'react-native';
+import { View, TextInput, StyleSheet, Text, TextInputProps } from 'react-native';
 
-const Input = ({title, placeholder} : {title:string, placeholder:string}) => {
+interface InputProps extends TextInputProps{
+    title: string
+}
+
+const Inputs = ({ title, ...props}: InputProps) => {
     return (
         <View style={styles.container}>
             <Text style={styles.textoinp}>{title}</Text>
-            <TextInput style={styles.input} placeholder={placeholder} placeholderTextColor="#808080"/>
+            <TextInput {...props} style={styles.input} placeholderTextColor="#808080" />
         </View>
     );
 }
@@ -13,7 +18,8 @@ const Input = ({title, placeholder} : {title:string, placeholder:string}) => {
 
 const styles = StyleSheet.create({
     container: {
-        marginLeft:30,
+        margin: 8,
+        marginHorizontal:15
     },
     input: {
         height: 40,
@@ -21,7 +27,6 @@ const styles = StyleSheet.create({
         backgroundColor: '#dcdcdc',
         borderRadius: 5,
         padding: 10,
-        marginBottom:15,
     },
     textoinp: {
         fontSize: 15,
@@ -31,4 +36,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default Input;
+export default Inputs;

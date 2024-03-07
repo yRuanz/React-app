@@ -18,7 +18,7 @@ const Botao = ({title} : {title:string}) => {
       padding: 10,
       borderRadius: 5,
       marginTop: 20,
-      marginHorizontal:32,
+      marginHorizontal:15,
     },
   
     buttonText: {
