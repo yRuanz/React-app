@@ -13,11 +13,11 @@ const AdicionarItens = () => {
                 <Cabecalho title="Cadastro de Itens" />
             </View>
             <View>
-                <InputLabel Label={"N° Inventário"} />
-                <InputLabel Label="Descrição" />
-                <InputLabel Label="Local" /> 
-                <InputLabel Label="Responsável" /> 
-                <InputLabel Label="Data de Registro" /> 
+                <InputLabel text={"N° Inventário"} />
+                <InputLabel text="Descrição" />
+                <InputLabel text="Local" /> 
+                <InputLabel text="Responsável" /> 
+                <InputLabel text="Data de Registro" /> 
             </View>
             <View style={styles.footer}>
                 <Rodape backgroundColor={"white"} iconColor={"black"} border={false} />
@@ -39,8 +39,11 @@ const styles = StyleSheet.create({
     },
 
     footer:{
-        paddingTop:240
+        top:210,
+        bottom:0
+        
     }
+    
 })
 
 export default AdicionarItens

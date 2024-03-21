@@ -10,7 +10,8 @@ interface InputProps extends TextInputProps{
 
 const Cabecalho = ({ title, ...props}: InputProps) => {
   return (
-    <View style={styles.navbar}>
+
+    <View style={styles.navbar}>    
       <Text><AntDesign name="arrowleft" size={30} color="white" /></Text><Text style={styles.texto}>{title}</Text><Text><AntDesign name="pluscircleo" size={30} color="white" /></Text>
     </View>
   );

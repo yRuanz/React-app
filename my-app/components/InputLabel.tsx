@@ -1,13 +1,12 @@
 import React from 'react';
 import { View, StyleSheet, Text, TextInput, TextInputProps } from 'react-native';
 import { useState } from 'react';
-import { StatusBar } from 'expo-status-bar';
 
 interface InputLabelProps extends TextInputProps {
-    Label: string;
+    text: string;
 }
 
-function InputL({ Label, ...props }: InputLabelProps) {
+function InputLabel({ text, ...props }: InputLabelProps) {
     const [hover, setHover] = useState("#5D5C5C");
     const styles = StyleSheet.create({
         container: {
@@ -15,7 +14,7 @@ function InputL({ Label, ...props }: InputLabelProps) {
         },
         formContainer: {
             paddingHorizontal: 20,
-            marginTop: 43,
+            marginTop: 35,
 
         },
         inputContainer: {
@@ -49,7 +48,7 @@ function InputL({ Label, ...props }: InputLabelProps) {
     return (
         <View style={styles.formContainer}>
             <View style={styles.inputContainer}>
-                <Text style={styles.label}>{Label}<Text style={styles.text}> *</Text></Text>
+                <Text style={styles.label}>{text}<Text style={styles.text}> *</Text></Text>
                 <TextInput
                     {...props}
                     onFocus={() => {
@@ -65,4 +64,4 @@ function InputL({ Label, ...props }: InputLabelProps) {
     );
 }
 
-export default InputL;
+export default InputLabel;
