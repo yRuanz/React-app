@@ -15,7 +15,7 @@ const Login = () => {
                 <Text style={styles.slogan}>Faça login para acessar o sistema!</Text>
                 <Inputs Label={"Email:"} placeholder={"Insira seu email:"}/>
                 <Inputs Label={"Senha:"} placeholder={"Insira sua senha:"} secureTextEntry/>
-                <Link href="/Cadastro" asChild>
+                <Link href="/inventario" asChild>
                     <TouchableOpacity>
                         <Botao title="Entrar"/>                        
                     </TouchableOpacity>

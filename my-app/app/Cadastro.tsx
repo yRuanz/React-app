@@ -1,5 +1,5 @@
 import React from "react";
-import { View,StyleSheet, Text, TextInput,TouchableOpacity, ScrollView} from "react-native";
+import { View,StyleSheet, Text, TextInput,TouchableOpacity,TouchableOpacityProps, ScrollView} from "react-native";
 import Botao from "../components/Button";
 import Status from "../components/StatusBar";
 import Inputs from "../components/Input";

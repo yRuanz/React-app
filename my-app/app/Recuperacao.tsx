@@ -17,8 +17,10 @@ const Recuperacao = () => {
             <Text style={styles.slogan}>Insira seu e-mail para recuperar a senha!</Text>
             <Inputs Label={"Email:"} placeholder={"Insira seu email"}/>
             <Link href="/index" asChild>
-                        <Botao title="Acessar" onPress={BotaoPress} />                        
-                </Link>
+                <TouchableOpacity>
+                    <Botao title="Acessar"/>                       
+                </TouchableOpacity>
+            </Link>
         </View>
     </View>
     );

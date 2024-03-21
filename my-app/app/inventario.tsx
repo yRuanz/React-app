@@ -1,8 +1,9 @@
 import React from "react";
-import { View,StyleSheet,Text, ScrollView } from "react-native";
+import { View,StyleSheet,Text, ScrollView,TouchableOpacity} from "react-native";
 import Itens from "../components/item"; 
-import { Entypo, AntDesign,FontAwesome6,FontAwesome } from '@expo/vector-icons';
+import { Entypo, AntDesign,FontAwesome6,FontAwesome} from '@expo/vector-icons';
 import { StatusBar } from "expo-status-bar";
+import { Link } from "expo-router";
 
 const Inventario = () => {
     return(
@@ -38,7 +39,12 @@ const Inventario = () => {
                     <Itens id="956389" item="CADEIRA SENAI" />
                     <Itens id="956389" item="CADEIRA SENAI" />
                 </ScrollView>
-                <AntDesign style={styles.add} name="pluscircle" size={50} color="red" />
+                <Link href="/AddItens" asChild>
+                    <TouchableOpacity>
+                        <AntDesign style={styles.add} name="pluscircle" size={50} color="red" />
+                    </TouchableOpacity>
+                </Link>
+
             </View>
             <View style={styles.footer}>
                 
@@ -54,9 +60,9 @@ const styles = StyleSheet.create({
     },
 
     navbar:{
-        height:110,
+        height:60,
         width:'100%',
-        paddingTop:60,
+        paddingTop:20,
         flexDirection:'row',
         justifyContent:'space-between',
         paddingHorizontal:15,
@@ -71,7 +77,7 @@ const styles = StyleSheet.create({
         justifyContent:'center',
         gap:20,
         backgroundColor:'#ff0000',
-        top:750,
+        top:715,
     },
     
     add:{
@@ -80,7 +86,7 @@ const styles = StyleSheet.create({
         right: 0,
         margin: 20,
         marginBottom: 50,
-        height: 280,
+        height: 215,
 
         
         
