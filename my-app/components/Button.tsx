@@ -1,7 +1,11 @@
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 
-const Botao = ({title} : {title:string}) => {
+type Props = {
+  title: string;
+  onPress: () => void;
+}
 
+const Botao = ({title} : {title:string}) => {
     return (
         <View>
             <TouchableOpacity style={styles.button}>

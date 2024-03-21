@@ -1,15 +1,16 @@
 import React from "react";
-import { View,StyleSheet, Text, TextInput,TouchableOpacity} from "react-native";
+import { View,StyleSheet, Text, TextInput,TouchableOpacity, ScrollView} from "react-native";
 import Botao from "../components/Button";
 import Status from "../components/StatusBar";
 import Inputs from "../components/Input";
+import { Link } from "expo-router";
 
 const Login = () => {
     return (
      
     <View style={styles.container}>
-        <View>
-            <Status title="Cadastre-se"/>
+        <ScrollView>        
+            <Status title="Cadastre-se"/>        
             <View style={styles.menuLogin}>
                 <Inputs Label={"Nome:"} placeholder={"Insira seu nome:"}/>
                 <Inputs Label={"Sobrenome:"} placeholder={"Insira seu sobrenome:"}/>
@@ -17,9 +18,13 @@ const Login = () => {
                 <Inputs Label={"Telefone:"} placeholder={"Insira seu telefone:"}/>
                 <Inputs Label={"Senha:"} placeholder={"Insira seu Senha:"} secureTextEntry/>
                 <Inputs Label={"Confirmar senha:"} placeholder={"Confirme sua senha:"} secureTextEntry/>
-                <Botao title="Cadastre-se"/>
+                <Link href="/index" asChild>
+                    <TouchableOpacity>
+                        <Botao title="Cadastre-se"/>   
+                    </TouchableOpacity>
+                </Link>
             </View>
-        </View>
+        </ScrollView>
     </View>
     );
   }
@@ -31,7 +36,7 @@ const Login = () => {
 
     menuLogin:{
         backgroundColor:'#ffff',
-        paddingVertical:10,
+        paddingBottom:100,
     },
 
     slogan:{

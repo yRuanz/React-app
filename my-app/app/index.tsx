@@ -3,6 +3,7 @@ import { View,StyleSheet, Text, TextInput,TouchableOpacity} from "react-native";
 import Botao from "../components/Button";
 import Status from "../components/StatusBar";
 import Inputs from "../components/Input";
+import { Link } from "expo-router";
 
 const Login = () => {
     return (
@@ -14,9 +15,22 @@ const Login = () => {
                 <Text style={styles.slogan}>Faça login para acessar o sistema!</Text>
                 <Inputs Label={"Email:"} placeholder={"Insira seu email:"}/>
                 <Inputs Label={"Senha:"} placeholder={"Insira sua senha:"} secureTextEntry/>
-                <Botao title="Cadastre-se"/>
+                <Link href="/Cadastro" asChild>
+                    <TouchableOpacity>
+                        <Botao title="Entrar"/>                        
+                    </TouchableOpacity>
+                </Link>
                 <View style={styles.linkText}>
-                    <Text style={{color:'blue'}}>Cadastre-se</Text><Text style={{color:'blue'}}>Esqueceu a senha?</Text>
+                <Link href="/Cadastro" asChild>
+                    <TouchableOpacity>
+                        <Text style={{color: "blue"}}>Cadastre-se</Text>
+                    </TouchableOpacity>
+                </Link>
+                <Link href="/Recuperacao" asChild>
+                    <TouchableOpacity>
+                        <Text style={{color: "blue"}}>Esqueceu sua senha?</Text>
+                    </TouchableOpacity>
+                </Link>
                 </View>
             </View>
         </View>

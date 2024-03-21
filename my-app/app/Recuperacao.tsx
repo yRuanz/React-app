@@ -3,8 +3,12 @@ import { View,StyleSheet, Text, TextInput,TouchableOpacity} from "react-native";
 import Botao from "../components/Button";
 import Status from "../components/StatusBar";
 import Inputs from "../components/Input";
+import { Link } from "expo-router";
 
 const Recuperacao = () => {
+    const BotaoPress =() => (
+            alert("E-mail enviado com sucesso! Aguarde para a recuperação da senha!")
+    )
     return (
      
     <View style={styles.container}>
@@ -12,7 +16,9 @@ const Recuperacao = () => {
         <View style={styles.menuRecup}>
             <Text style={styles.slogan}>Insira seu e-mail para recuperar a senha!</Text>
             <Inputs Label={"Email:"} placeholder={"Insira seu email"}/>
-            <Botao title="Acessar" />
+            <Link href="/index" asChild>
+                        <Botao title="Acessar" onPress={BotaoPress} />                        
+                </Link>
         </View>
     </View>
     );
@@ -35,6 +41,7 @@ const Recuperacao = () => {
         backgroundColor: '#ffff',
         paddingTop:20,
         fontWeight:'bold',
+        paddingBottom:320,
     },
 
     slogan:{
