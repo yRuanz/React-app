@@ -47,9 +47,15 @@ const Inventario = () => {
 
             </View>
             <View style={styles.footer}>
-                
-                <Text><FontAwesome6 name="camera-rotate" size={30} color="white" /></Text><Text><FontAwesome name="list-ol" size={30} color="white" /></Text>
-            </View>
+            <Link href="/Scanner" asChild>
+                <TouchableOpacity>
+                    <Text><FontAwesome6 name="camera-rotate" size={30} color="white" /></Text><Text><FontAwesome name="list-ol" size={30} color="white" /></Text>
+                </TouchableOpacity>            
+            </Link> 
+            </View>                  
+
+
+
                 
         </View>
     )

@@ -1,7 +1,7 @@
 import React from "react";
 import { View,StyleSheet, Text } from "react-native";
 import Status from "../components/StatusBar";
-import { AntDesign } from '@expo/vector-icons';
+import { AntDesign} from '@expo/vector-icons';
 
 const Loading = () => {
     return (

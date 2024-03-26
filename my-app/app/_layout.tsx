@@ -16,9 +16,17 @@ export default function Layout() {
             name="Recuperacao"options={{
                 statusBarColor: '#011E83'
             }}/>
-                        <Stack.Screen
+            <Stack.Screen
+            name="drawer"options={{
+                headerShown: false
+            }}/>
+            <Stack.Screen
             name="Cadastro"options={{
                 statusBarColor: '#FF0000'
+            }}/>
+            <Stack.Screen
+            name="inventario"options={{
+                statusBarColor: '#000000'
             }}/>
         </Stack>
             
