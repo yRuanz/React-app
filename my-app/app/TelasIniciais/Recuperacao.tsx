@@ -1,8 +1,8 @@
 import React from "react";
 import { View,StyleSheet, Text, TextInput,TouchableOpacity} from "react-native";
-import Botao from "../../../components/Button";
-import Status from "../../../components/StatusBar";
-import Inputs from "../../../components/Input";
+import Botao from "@comp/Button";
+import Status from "@comp/StatusBar";
+import Inputs from "@comp/Input";
 import { Link } from "expo-router";
 
 const Recuperacao = () => {
