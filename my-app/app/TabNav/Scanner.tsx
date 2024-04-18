@@ -1,8 +1,8 @@
 import React from "react";
 import { View,StyleSheet,Text } from "react-native";
 import { StatusBar } from "expo-status-bar";
-import Cabecalho from "../components/header";
-import Rodape from "../components/footer";
+import Cabecalho from "@comp/header";
+import Rodape from "@comp/footer";
 import {MaterialIcons} from '@expo/vector-icons'
 
 

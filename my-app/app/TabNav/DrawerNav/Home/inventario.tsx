@@ -1,6 +1,6 @@
 import React from "react";
 import { View,StyleSheet,Text, ScrollView,TouchableOpacity} from "react-native";
-import Itens from "../components/item"; 
+import Itens from "@comp/item"; 
 import { Entypo, AntDesign,FontAwesome6,FontAwesome} from '@expo/vector-icons';
 import { StatusBar } from "expo-status-bar";
 import { Link } from "expo-router";

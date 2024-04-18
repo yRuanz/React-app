@@ -1,9 +1,9 @@
 import React from "react";
 import { View, StyleSheet, TouchableOpacity, Text} from "react-native";
-import PatriBar from "../components/inventariobar";
+import PatriBar from "@comp/inventarioBar";
 import {AntDesign, MaterialIcons } from '@expo/vector-icons';
-import Rodape from "../components/footer";
-import InputLabel from "../components/InputLabel";
+import Rodape from "@comp/footer";
+import InputLabel from "@comp/InputLabel";
 import { Link } from "expo-router";
 
 const Editar = () => {
@@ -35,7 +35,7 @@ const Editar = () => {
             <InputLabel label="Data de registro" placeholder="05/03/2024"/>
 
             </View>
-            
+
         </View>
     );
 };
