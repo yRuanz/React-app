@@ -3,10 +3,10 @@ import { View, StyleSheet, Text, TextInput, TextInputProps } from 'react-native'
 import { useState } from 'react';
 
 interface InputLabelProps extends TextInputProps {
-    text: string;
+    label: string;
 }
 
-function InputLabel({ text, ...props }: InputLabelProps) {
+function InputLabel({ label, ...props }: InputLabelProps) {
     const [hover, setHover] = useState("#5D5C5C");
     const styles = StyleSheet.create({
         container: {
@@ -48,7 +48,7 @@ function InputLabel({ text, ...props }: InputLabelProps) {
     return (
         <View style={styles.formContainer}>
             <View style={styles.inputContainer}>
-                <Text style={styles.label}>{text}<Text style={styles.text}> *</Text></Text>
+                <Text style={styles.label}>{label}<Text style={styles.text}> *</Text></Text>
                 <TextInput
                     {...props}
                     onFocus={() => {

@@ -19,7 +19,7 @@ const Scanner = () => {
                 <Rodape backgroundColor={"white"} iconColor={"black"} border={false} />
             </View>
             <View style={styles.corpo}>
-                <MaterialIcons name="qr-code-scanner" size={350} color="#5D5C5C" />
+                <MaterialIcons name="qr-code-scanner" size={250} color="#5D5C5C" />
             </View>
         </View>
     )
