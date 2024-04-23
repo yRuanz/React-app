@@ -1,9 +1,9 @@
 import React from "react";
 import { View,StyleSheet,Text, ScrollView } from "react-native";
-import Cabecalho from "../../../../components/header";
-import Rodape from "../../../../components/footer";
+import Cabecalho from "@comp/header";
+import Rodape from "@comp/footer";
 import { StatusBar } from "expo-status-bar";
-import InputLabel from "../../../../components/InputLabel";
+import InputLabel from "@comp/InputLabel";
 
 
 const DescricaoItens = () => {
