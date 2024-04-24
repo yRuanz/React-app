@@ -4,6 +4,7 @@ import { StatusBar } from "expo-status-bar";
 import Cabecalho from "@comp/header";
 import Rodape from "@comp/footer";
 import {MaterialIcons} from '@expo/vector-icons'
+import { Camera, CameraType } from "expo-camera";
 
 
 const Scanner = () => {

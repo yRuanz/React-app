@@ -1,22 +1,44 @@
 import { Stack } from "expo-router";
+import { useColor } from "@temas/temas";
+import React from "react";
+import { Ionicons } from "@expo/vector-icons";
+
 
 export default function layout() {
-    return(    
+  const cores = useColor();
+  return (
     <Stack>
-        <Stack.Screen name="index" options={{
-            headerShown:false }} />
-        <Stack.Screen name="TelasIniciais/Recuperacao" 
-            options={{
-                headerTitle:"",
-                headerTransparent: true,
-                headerTintColor: "#fff"
-                }} />
-        <Stack.Screen name="TelasIniciais/Cadastro" 
-            options={{
-                headerTitle:"",
-                headerTransparent: true,
-                headerTintColor: "#fff"
-                }} />
+
+      <Stack.Screen name="index" options={{
+        headerShown: false,
+        statusBarColor: cores.bgQuaternary }} />
+      
+      <Stack.Screen name="Recuperacao" options={{
+        headerTitle: "" ,
+        statusBarColor: cores.bgTertiary,
+        headerTintColor: cores.textColorPrimary, 
+        headerTransparent: true }} />
+
+      <Stack.Screen name="Cadastro" options={{
+        headerTitle: "" , 
+        statusBarColor: cores.bgSecondary,
+        headerTintColor: cores.textColorPrimary,
+        headerTransparent: true }} />
+
+    <Stack.Screen name="Login" options={{
+        headerTitle: "" , 
+        statusBarColor: cores.bgQuaternary,
+        headerTintColor: cores.textColorPrimary,
+        headerTransparent: true }} />
+
+    <Stack.Screen name="TabNav" options={{
+        headerShown: false, 
+    }} />
+
+
     </Stack>
-    )
+
+    
+    
+  )
 }

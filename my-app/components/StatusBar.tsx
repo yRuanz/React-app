@@ -14,7 +14,8 @@ export default function Status ({ title }: Props){
       padding: 60,
     },
     image: {
-      resizeMode: 'contain',
+      width:200,
+      height:51
     },
     texto: {
       color: 'white',
