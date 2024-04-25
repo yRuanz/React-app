@@ -9,19 +9,7 @@ import { Link } from "expo-router";
 const Editar = () => {
     return(
         <View style={styles.container}>
-
-            <PatriBar color="red">
-                <TouchableOpacity>
-                    <Link href="/DescricaoIten" asChild>
-                        <AntDesign name="arrowleft" size={25} color="#ffff" />
-                    </Link>
-                </TouchableOpacity>
-                    <Text style={styles.text}>Editar</Text>
-                <TouchableOpacity>
-                    <MaterialIcons name="check-circle" size={25} color="#ffff" />
-                </TouchableOpacity>
-            </PatriBar>
-
+            
             <View style={styles.inputContainer}>
 
             <InputLabel label="N° Inventario" placeholder="957689"/>

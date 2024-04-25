@@ -5,12 +5,11 @@ import Status from "@comp/StatusBar";
 import Inputs from "@comp/Input";
 import { Link } from "expo-router";
 
-const Login = () => {
+const Cadastro = () => {
     return (
      
     <View style={styles.container}>
-        <ScrollView>        
-            <Status title="Cadastre-se"/>        
+        <ScrollView>            
             <View style={styles.menuLogin}>
                 <Inputs Label={"Nome:"} placeholder={"Insira seu nome:"}/>
                 <Inputs Label={"Sobrenome:"} placeholder={"Insira seu sobrenome:"}/>
@@ -55,4 +54,4 @@ const Login = () => {
 
 })
 
-  export default Login
+  export default Cadastro

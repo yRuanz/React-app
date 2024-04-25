@@ -9,7 +9,7 @@ export default function layout() {
   return (
     <Stack>
 
-      <Stack.Screen name="" options={{
+      <Stack.Screen name="index" options={{
         headerShown: false,
         statusBarColor: cores.bgQuaternary }} />
       

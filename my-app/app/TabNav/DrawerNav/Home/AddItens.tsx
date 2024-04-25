@@ -9,18 +9,12 @@ import InputLabel from "@comp/InputLabel";
 const AdicionarItens = () => {
     return(
         <View style={styles.container}>
-            <View style={styles.navbar}>
-                <Cabecalho title="Cadastro de Itens" />
-            </View>
             <View>
                 <InputLabel label={"N° Inventário"} />
                 <InputLabel label="Descrição" />
                 <InputLabel label="Local" /> 
                 <InputLabel label="Responsável" /> 
                 <InputLabel label="Data de Registro" /> 
-            </View>
-            <View style={styles.footer}>
-                <Rodape backgroundColor={"white"} iconColor={"black"} border={false} />
             </View>
                 
         </View>

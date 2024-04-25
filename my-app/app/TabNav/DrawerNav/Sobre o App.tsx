@@ -5,3 +5,5 @@ function Sobre_o_App(){
         <Text>Sobre o App</Text>
     )
 }
+
+export default Sobre_o_App

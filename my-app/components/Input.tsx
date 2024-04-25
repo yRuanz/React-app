@@ -24,7 +24,7 @@ export default function Inputs({Label, ...props}:InputProps){
           marginTop: 5,
           backgroundColor: '#F5F5F5',
           borderWidth: 1,
-          borderColor: hover,
+          borderColor: 'hover',
           marginHorizontal:15
         },
       });
