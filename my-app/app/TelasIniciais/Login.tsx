@@ -1,6 +1,5 @@
 import React from "react";
 import { View,StyleSheet, Text, TextInput,TouchableOpacity} from "react-native";
-import Botao from "@comp/Button";
 import Status from "@comp/StatusBar";
 import Inputs from "@comp/Input";
 import { Link } from "expo-router";
@@ -13,15 +12,15 @@ const Login = () => {
     return (
      
         
-            <View style={styles.container}>
+            <View style={[styles.container,{backgroundColor: cores.bgQuaternary}]}>
                 <Status title="Login"/>
-                <View style={styles.menuLogin}>
-                    <Text style={styles.slogan}>Faça login para acessar o sistema!</Text>
+                <View style={[styles.menuLogin,{backgroundColor: cores.bgPrimary}]}>
+                    <Text style={[styles.slogan,{color: cores.textColorPrimary}]}>Faça login para acessar o sistema!</Text>
                     <Inputs Label={"Email:"} placeholder={"Insira seu email:"}/>
                     <Inputs Label={"Senha:"} placeholder={"Insira sua senha:"} secureTextEntry/>
                     <Link href="/TabNav/DrawerNav/Home/inventario" asChild>
                         <TouchableOpacity>
-                            <LinkBtn title="Entrar" href="TabNav"/>                        
+                            <LinkBtn title="Entrar" href="TabNav/DrawerNav/Home/inventario"/>                        
                         </TouchableOpacity>
                     </Link>
                     <View style={styles.linkText}>

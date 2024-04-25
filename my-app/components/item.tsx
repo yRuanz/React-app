@@ -1,4 +1,12 @@
 import { View,StyleSheet,Text } from "react-native";
+import { Link } from "expo-router";
+import React from "react";
+import { useColor } from "@temas/temas";
+
+type Props ={
+    id: string,
+    item: string,
+};
 
 const Itens = ({id,item  } :{id:string, item:string}) => {
     return(

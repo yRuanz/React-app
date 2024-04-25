@@ -27,10 +27,9 @@ export default function Status ({ title }: Props){
   return (
     <View style={styles.container}>
       <Image source={require('@assets/senailogo.png')} style={styles.image} />
-      <StatusBar style="light" backgroundColor="#333" />
+      <StatusBar style="dark" backgroundColor="#333" />
       <Text style={styles.texto}>{title}</Text>
     </View>
   );
 };
-
 

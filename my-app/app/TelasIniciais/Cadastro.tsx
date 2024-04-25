@@ -1,6 +1,5 @@
 import React from "react";
 import { View,StyleSheet, Text, TextInput,TouchableOpacity,TouchableOpacityProps, ScrollView} from "react-native";
-import Botao from "@comp/Button"
 import Status from "@comp/StatusBar";
 import Inputs from "@comp/Input";
 import { Link } from "expo-router";

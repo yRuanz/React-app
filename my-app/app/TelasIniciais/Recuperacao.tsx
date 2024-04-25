@@ -1,6 +1,5 @@
 import React from "react";
 import { View,StyleSheet, Text, TextInput,TouchableOpacity} from "react-native";
-import Botao from "@comp/Button";
 import Status from "@comp/StatusBar";
 import Inputs from "@comp/Input";
 import { Link } from "expo-router";
@@ -15,10 +14,10 @@ const Recuperacao = () => {
     const cores = useColor();
     return (
      
-    <View style={styles.container}>
+    <View style={[styles.container, {backgroundColor: cores.bgTertiary}]}>
         <Status title='Recuperação de Senha'/>
-        <View style={styles.menuRecup}>
-            <Text style={styles.slogan}>Insira seu e-mail para recuperar a senha!</Text>
+        <View style={[styles.menuRecup,{backgroundColor: cores.bgPrimary}]}>
+            <Text style={[styles.slogan, {color: cores.textColorPrimary}]}>Insira seu e-mail para recuperar a senha!</Text>
             <Inputs Label={"Email:"} placeholder={"Insira seu email"}/>
             <Link href="/TelasIniciais/Login" asChild>
                 <TouchableOpacity>

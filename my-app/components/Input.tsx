@@ -1,3 +1,4 @@
+import { useColor } from "@temas/temas";
 import { StatusBar } from "expo-status-bar";
 import React, { useState } from "react";
 import { View, TextInput, StyleSheet, Text, TextInputProps } from 'react-native';
@@ -7,6 +8,8 @@ interface InputProps extends TextInputProps{
 }
 
 export default function Inputs({Label, ...props}:InputProps){
+    const cores = useColor();
+   
     const [hover,setHover] = useState('#f5f5f5')
     const styles = StyleSheet.create({
         container: {

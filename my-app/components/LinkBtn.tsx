@@ -5,7 +5,8 @@ import { useColor } from "@temas/temas"
 
 
 interface LinkBtnProps extends LinkProps{
-    title: string
+    title: string,
+    href: any,
 }
 
 export default function LinkBtn({title, ...props}: LinkBtnProps){
@@ -13,7 +14,7 @@ export default function LinkBtn({title, ...props}: LinkBtnProps){
 
     const styles = StyleSheet.create({
         button: {
-            backgroundColor: 'black',
+            backgroundColor: cores.bgButton,
             padding: 10,
             borderRadius: 5,
             marginTop: 20,
@@ -28,11 +29,10 @@ export default function LinkBtn({title, ...props}: LinkBtnProps){
     })
 
     return(
-
-        
+        <Link {...props} asChild>
             <TouchableOpacity style={styles.button}>
                 <Text style={styles.title}>{title}</Text>
             </TouchableOpacity>
-        
+        </Link>
     )
 }

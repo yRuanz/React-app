@@ -8,7 +8,7 @@ const Loading = () => {
     const cores = useColor();
 
     return (
-      <View style={styles.container}>
+      <View style={[styles.container, {backgroundColor: cores.bgSecundary}]}>
         <Status title=''/> 
         <Text style={styles.slogan}><AntDesign name="loading1" size={30} color="white"/></Text>
       </View>

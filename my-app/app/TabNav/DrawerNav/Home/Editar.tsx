@@ -1,6 +1,5 @@
 import React from "react";
 import { View, StyleSheet, TouchableOpacity, Text} from "react-native";
-import PatriBar from "@comp/inventarioBar";
 import {AntDesign, MaterialIcons } from '@expo/vector-icons';
 import Rodape from "@comp/footer";
 import InputLabel from "@comp/InputLabel";
@@ -30,6 +29,7 @@ const styles = StyleSheet.create({
     text: {
         color: "#ffff",
         fontSize: 16,
+        marginHorizontal:20
     },
     inputContainer: {
         flex: 1,

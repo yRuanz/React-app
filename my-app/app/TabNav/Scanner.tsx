@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+import { useState } from "react";
 import { View, StyleSheet, TouchableOpacity, Dimensions } from "react-native";
 import { MaterialIcons } from '@expo/vector-icons';
 import { Camera, CameraType } from "expo-camera";
@@ -9,10 +10,8 @@ const Scanner = () => {
 
     if (!permission)
         return null;
-
-    if (!permission.granted)
-        return null;
-
+    requestPermission();
+        
     return (
         <View style={styles.container}>
             {isCameraActive ? (

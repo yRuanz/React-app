@@ -8,7 +8,7 @@ import { useColor } from "@temas/temas";
 const Inventario = () => {
     const cores = useColor();
     return(
-        <View style={styles.container}>
+        <View style={[styles.container,{backgroundColor:cores.bgPrimary}]}>
             <View style={styles.navbar}>
             </View>
             <View>

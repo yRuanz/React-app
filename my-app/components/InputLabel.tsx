@@ -1,12 +1,14 @@
 import React from 'react';
 import { View, StyleSheet, Text, TextInput, TextInputProps } from 'react-native';
 import { useState } from 'react';
+import { useColor } from '@temas/temas';
 
 interface InputLabelProps extends TextInputProps {
     label: string;
 }
 
 function InputLabel({ label, ...props }: InputLabelProps) {
+    const cores = useColor();
     const [hover, setHover] = useState("#5D5C5C");
     const styles = StyleSheet.create({
         container: {
@@ -15,7 +17,6 @@ function InputLabel({ label, ...props }: InputLabelProps) {
         formContainer: {
             paddingHorizontal: 20,
             marginTop: 35,
-
         },
         inputContainer: {
             position: 'relative',
