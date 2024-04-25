@@ -12,44 +12,44 @@ const Login = () => {
 
     return (
      
-    <View style={[styles.container, {backgroundColor: cores.bgQuaternary }]}>
-        <View>
-            <Status title="Login"/>
-            <View style={[styles.menuLogin, {backgroundColor: cores.bgPrimary}]}>
-                <Text style={[styles.slogan, {color: cores.textColorPrimary}]}>Faça login para acessar o sistema!</Text>
-                <Inputs Label={"Email:"} placeholder={"Insira seu email:"}/>
-                <Inputs Label={"Senha:"} placeholder={"Insira sua senha:"} secureTextEntry/>
-                <Link href="/TabNav/DrawerNav/Home/inventario" asChild>
-                    <TouchableOpacity>
-                        <LinkBtn title="Entrar" href="TabNav"/>                        
-                    </TouchableOpacity>
-                </Link>
-                <View style={styles.linkText}>
-                <Link href="/TelasIniciais/Cadastro" style={{ color: cores.bginfo}} asChild>
-                    <TouchableOpacity>
-                        <Text style={{color: "blue"}}>Cadastre-se</Text>
-                    </TouchableOpacity>
-                </Link>
-                <Link href="/TelasIniciais/Recuperacao" style={{ color: cores.bginfo}} asChild>
-                    <TouchableOpacity>
-                        <Text style={{color: "blue"}}>Esqueceu sua senha?</Text>
-                    </TouchableOpacity>
-                </Link>
+        
+            <View style={styles.container}>
+                <Status title="Login"/>
+                <View style={styles.menuLogin}>
+                    <Text style={styles.slogan}>Faça login para acessar o sistema!</Text>
+                    <Inputs Label={"Email:"} placeholder={"Insira seu email:"}/>
+                    <Inputs Label={"Senha:"} placeholder={"Insira sua senha:"} secureTextEntry/>
+                    <Link href="/TabNav/DrawerNav/Home/inventario" asChild>
+                        <TouchableOpacity>
+                            <LinkBtn title="Entrar" href="TabNav"/>                        
+                        </TouchableOpacity>
+                    </Link>
+                    <View style={styles.linkText}>
+                    <Link href="/TelasIniciais/Cadastro" style={{ color: cores.bginfo}} asChild>
+                        <TouchableOpacity>
+                            <Text style={{color: "blue"}}>Cadastre-se</Text>
+                        </TouchableOpacity>
+                    </Link>
+                    <Link href="/TelasIniciais/Recuperacao" style={{ color: cores.bginfo}} asChild>
+                        <TouchableOpacity>
+                            <Text style={{color: "blue"}}>Esqueceu sua senha?</Text>
+                        </TouchableOpacity>
+                    </Link>
+                    </View>
                 </View>
             </View>
-        </View>
-    </View>
-    );
-  }
+   
+        );
+    }
 
   const styles = StyleSheet.create({
     container:{
         backgroundColor: '#000000',
+        height:'100%',
         },
 
     menuLogin:{
         backgroundColor:'#ffff',
-        paddingVertical:10,
         height: '100%',
     },
 

@@ -8,10 +8,10 @@ export default function layout() {
   const cores = useColor();
   return (
     <Stack>
-
-      <Stack.Screen name="TabNav/DrawerNav/inventario" options={{
-        headerShown: false,
-        statusBarColor: cores.bgQuaternary }} />
+      <Stack.Screen name="index"
+      options={{
+        headerShown: false
+      }}/>
       
       <Stack.Screen name="TelasIniciais/Recuperacao" options={{
         headerTitle: "" ,
@@ -25,13 +25,18 @@ export default function layout() {
         headerTintColor: cores.textColorPrimary,
         headerTransparent: true }} />
 
-    <Stack.Screen name="TelasIniciais/Login" options={{
-        headerTitle: "" , 
-        statusBarColor: cores.bgQuaternary,
-        headerTintColor: cores.textColorPrimary,
-        headerTransparent: true }} />
+      <Stack.Screen name='TabNav'
+        options={{
+          headerShown: false
+        }}/>
 
-    </Stack>
+      <Stack.Screen name="TelasIniciais/Login" options={{
+          headerTitle: "" , 
+          statusBarColor: cores.bgQuaternary,
+          headerTintColor: cores.textColorPrimary,
+          headerTransparent: true }} />
+
+      </Stack>
 
     
     

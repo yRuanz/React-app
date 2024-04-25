@@ -60,6 +60,9 @@ export default function layout() {
                 headerStyle: { backgroundColor: cores.bgPatrimonio },
                 headerTitleAlign: 'center'
             }}/>
+            
         </Stack>
+
+        
     )
 }

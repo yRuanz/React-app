@@ -4,7 +4,7 @@ import Botao from "@comp/Button";
 import Status from "@comp/StatusBar";
 import Inputs from "@comp/Input";
 import { Link } from "expo-router";
-import {useColor} from "@temas/temas"
+import {useColor} from "@temas/temas";
 import LinkBtn from "@comp/LinkBtn";
 
 const Recuperacao = () => {
@@ -33,7 +33,7 @@ const Recuperacao = () => {
   const styles = StyleSheet.create({
     container: {
         flex:1,
-      backgroundColor: '#011E83',
+        backgroundColor: '#011E83',
     },
 
     titulo: {

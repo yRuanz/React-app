@@ -29,10 +29,10 @@ export default function LinkBtn({title, ...props}: LinkBtnProps){
 
     return(
 
-        <Link {...props} asChild>
+        
             <TouchableOpacity style={styles.button}>
                 <Text style={styles.title}>{title}</Text>
             </TouchableOpacity>
-        </Link>
+        
     )
 }
