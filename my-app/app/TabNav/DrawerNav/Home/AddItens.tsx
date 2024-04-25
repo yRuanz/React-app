@@ -4,6 +4,7 @@ import Cabecalho from "@comp/header";
 import Rodape from "@comp/footer";
 import { StatusBar } from "expo-status-bar";
 import InputLabel from "@comp/InputLabel";
+import { useColor } from "@temas/temas";
 
 
 const AdicionarItens = () => {
@@ -16,11 +17,11 @@ const AdicionarItens = () => {
                 <InputLabel label="Responsável" /> 
                 <InputLabel label="Data de Registro" /> 
             </View>
-                
         </View>
     )
 }
 
+const cores = useColor()
 const styles = StyleSheet.create({
     container:{
     },

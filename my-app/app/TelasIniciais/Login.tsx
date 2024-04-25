@@ -4,29 +4,33 @@ import Botao from "@comp/Button";
 import Status from "@comp/StatusBar";
 import Inputs from "@comp/Input";
 import { Link } from "expo-router";
+import {useColor} from "@temas/temas";
+import LinkBtn from "@comp/LinkBtn";
 
 const Login = () => {
+    const cores = useColor();
+
     return (
      
-    <View style={styles.container}>
+    <View style={[styles.container, {backgroundColor: cores.bgQuaternary }]}>
         <View>
             <Status title="Login"/>
-            <View style={styles.menuLogin}>
-                <Text style={styles.slogan}>Faça login para acessar o sistema!</Text>
+            <View style={[styles.menuLogin, {backgroundColor: cores.bgPrimary}]}>
+                <Text style={[styles.slogan, {color: cores.textColorPrimary}]}>Faça login para acessar o sistema!</Text>
                 <Inputs Label={"Email:"} placeholder={"Insira seu email:"}/>
                 <Inputs Label={"Senha:"} placeholder={"Insira sua senha:"} secureTextEntry/>
-                <Link href="/inventario" asChild>
+                <Link href="/TabNav/DrawerNav/Home/inventario" asChild>
                     <TouchableOpacity>
-                        <Botao title="Entrar"/>                        
+                        <LinkBtn title="Entrar" href="TabNav"/>                        
                     </TouchableOpacity>
                 </Link>
                 <View style={styles.linkText}>
-                <Link href="/Cadastro" asChild>
+                <Link href="/TelasIniciais/Cadastro" style={{ color: cores.bginfo}} asChild>
                     <TouchableOpacity>
                         <Text style={{color: "blue"}}>Cadastre-se</Text>
                     </TouchableOpacity>
                 </Link>
-                <Link href="/Recuperacao" asChild>
+                <Link href="/TelasIniciais/Recuperacao" style={{ color: cores.bginfo}} asChild>
                     <TouchableOpacity>
                         <Text style={{color: "blue"}}>Esqueceu sua senha?</Text>
                     </TouchableOpacity>
@@ -46,6 +50,7 @@ const Login = () => {
     menuLogin:{
         backgroundColor:'#ffff',
         paddingVertical:10,
+        height: '100%',
     },
 
     slogan:{

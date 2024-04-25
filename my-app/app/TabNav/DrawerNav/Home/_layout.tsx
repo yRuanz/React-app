@@ -41,7 +41,7 @@ export default function layout() {
                     </Link>
                 </TouchableOpacity>
                 ),
-                headerTitle: "Cadastro de itens",
+                headerTitle: "Editar",
                 headerTintColor: "#fff",
                 headerStyle: { backgroundColor: cores.bgPatrimonio },
                 headerTitleAlign: 'center'

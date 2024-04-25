@@ -4,12 +4,17 @@ import Botao from "@comp/Button"
 import Status from "@comp/StatusBar";
 import Inputs from "@comp/Input";
 import { Link } from "expo-router";
+import { useColor } from "@temas/temas";
+import LinkBtn from "@comp/LinkBtn";
 
 const Cadastro = () => {
+    const cores = useColor();
+
     return (
      
     <View style={styles.container}>
-        <ScrollView>            
+        <Status title='Cadastre-se'/>
+        <ScrollView contentContainerStyle={styles.cadastro}>            
             <View style={styles.menuLogin}>
                 <Inputs Label={"Nome:"} placeholder={"Insira seu nome:"}/>
                 <Inputs Label={"Sobrenome:"} placeholder={"Insira seu sobrenome:"}/>
@@ -17,11 +22,7 @@ const Cadastro = () => {
                 <Inputs Label={"Telefone:"} placeholder={"Insira seu telefone:"}/>
                 <Inputs Label={"Senha:"} placeholder={"Insira seu Senha:"} secureTextEntry/>
                 <Inputs Label={"Confirmar senha:"} placeholder={"Confirme sua senha:"} secureTextEntry/>
-                <Link href="/index" asChild>
-                    <TouchableOpacity>
-                        <Botao title="Cadastre-se"/>   
-                    </TouchableOpacity>
-                </Link>
+                    <LinkBtn title="Cadastre-se" href="TelasIniciais/Login"/>   
             </View>
         </ScrollView>
     </View>
@@ -31,11 +32,12 @@ const Cadastro = () => {
   const styles = StyleSheet.create({
     container:{
         backgroundColor: '#ff0000',
+        height:'100%',
         },
 
     menuLogin:{
         backgroundColor:'#ffff',
-        paddingBottom:100,
+        paddingBottom:20
     },
 
     slogan:{
@@ -50,8 +52,11 @@ const Cadastro = () => {
         flexDirection:'row',
         marginTop:10,
         paddingHorizontal:27,
-    }
+    },
 
+    cadastro:{
+        flexGrow:1,
+    }
 })
 
   export default Cadastro

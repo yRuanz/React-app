@@ -2,8 +2,11 @@ import React from "react";
 import { View,StyleSheet, Text } from "react-native";
 import Status from "@comp/StatusBar";
 import { AntDesign} from '@expo/vector-icons';
+import { useColor } from "@temas/temas";
 
 const Loading = () => {
+    const cores = useColor();
+
     return (
       <View style={styles.container}>
         <Status title=''/> 

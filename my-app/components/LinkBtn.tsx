@@ -1,6 +1,7 @@
 import { Link } from "expo-router"
 import { LinkProps } from "next/link"
 import { Text,TouchableOpacity,StyleSheet,} from "react-native"
+import { useColor } from "@temas/temas"
 
 
 interface LinkBtnProps extends LinkProps{
@@ -8,18 +9,21 @@ interface LinkBtnProps extends LinkProps{
 }
 
 export default function LinkBtn({title, ...props}: LinkBtnProps){
+    const cores = useColor();
 
     const styles = StyleSheet.create({
         button: {
-            backgroundColor: "#000000",
+            backgroundColor: 'black',
             padding: 10,
-            borderRadius: 5
+            borderRadius: 5,
+            marginTop: 20,
+            marginHorizontal:15,
         },
 
         title: {
             color: "#FFFFFF",
             textAlign: 'center',
-            fontSize: 16
+            fontSize: 16,
         }
     })
 

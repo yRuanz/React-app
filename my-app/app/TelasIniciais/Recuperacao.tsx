@@ -4,11 +4,15 @@ import Botao from "@comp/Button";
 import Status from "@comp/StatusBar";
 import Inputs from "@comp/Input";
 import { Link } from "expo-router";
+import {useColor} from "@temas/temas"
+import LinkBtn from "@comp/LinkBtn";
 
 const Recuperacao = () => {
     const BotaoPress =() => (
             alert("E-mail enviado com sucesso! Aguarde para a recuperação da senha!")
     )
+
+    const cores = useColor();
     return (
      
     <View style={styles.container}>
@@ -16,9 +20,9 @@ const Recuperacao = () => {
         <View style={styles.menuRecup}>
             <Text style={styles.slogan}>Insira seu e-mail para recuperar a senha!</Text>
             <Inputs Label={"Email:"} placeholder={"Insira seu email"}/>
-            <Link href="/index" asChild>
+            <Link href="/TelasIniciais/Login" asChild>
                 <TouchableOpacity>
-                    <Botao title="Acessar"/>                       
+                    <LinkBtn title="Acessar" href="TelasIniciais/Login"/>                       
                 </TouchableOpacity>
             </Link>
         </View>

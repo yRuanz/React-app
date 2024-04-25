@@ -4,9 +4,11 @@ import Cabecalho from "@comp/header";
 import Rodape from "@comp/footer";
 import { StatusBar } from "expo-status-bar";
 import InputLabel from "@comp/InputLabel";
+import { useColor } from "@temas/temas";
 
 
 const DescricaoItens = () => {
+    const cores = useColor();
     return(
         <View style={styles.container}>
             <View>

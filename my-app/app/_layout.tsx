@@ -9,23 +9,23 @@ export default function layout() {
   return (
     <Stack>
 
-      <Stack.Screen name="index" options={{
+      <Stack.Screen name="TabNav/DrawerNav/inventario" options={{
         headerShown: false,
         statusBarColor: cores.bgQuaternary }} />
       
-      <Stack.Screen name="Recuperacao" options={{
+      <Stack.Screen name="TelasIniciais/Recuperacao" options={{
         headerTitle: "" ,
         statusBarColor: cores.bgTertiary,
         headerTintColor: cores.textColorPrimary, 
         headerTransparent: true }} />
 
-      <Stack.Screen name="Cadastro" options={{
+      <Stack.Screen name="TelasIniciais/Cadastro" options={{
         headerTitle: "" , 
         statusBarColor: cores.bgSecundary,
         headerTintColor: cores.textColorPrimary,
         headerTransparent: true }} />
 
-    <Stack.Screen name="Login" options={{
+    <Stack.Screen name="TelasIniciais/Login" options={{
         headerTitle: "" , 
         statusBarColor: cores.bgQuaternary,
         headerTintColor: cores.textColorPrimary,

@@ -22,7 +22,7 @@ function InputLabel({ label, ...props }: InputLabelProps) {
         },
         label: {
             position: 'absolute',
-            backgroundColor: 'white',
+            backgroundColor: '#f2f2f2',
             color: hover,
             paddingHorizontal: 8,
             top: -8,

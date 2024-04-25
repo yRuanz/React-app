@@ -4,8 +4,10 @@ import Itens from "@comp/item";
 import { Entypo, AntDesign,FontAwesome6,FontAwesome} from '@expo/vector-icons';
 import { StatusBar } from "expo-status-bar";
 import { Link } from "expo-router";
+import { useColor } from "@temas/temas";
 
 const Inventario = () => {
+    const cores = useColor();
     return(
         <View style={styles.container}>
             <StatusBar style="dark"/>
@@ -38,9 +40,9 @@ const Inventario = () => {
                     <Itens id="956389" item="CADEIRA SENAI" />
                     <Itens id="956389" item="CADEIRA SENAI" />
                 </ScrollView>
-                <Link href="/AddItens" asChild>
-                    <TouchableOpacity>
-                        <AntDesign style={styles.add} name="pluscircle" size={50} color="red" />
+                <Link href="TabNav/DrawerNav/Home/AddItens" asChild>
+                    <TouchableOpacity style={styles.add}>
+                        <AntDesign name="pluscircle" size={50} color="#FF0000" />
                     </TouchableOpacity>
                 </Link>
 
@@ -51,10 +53,7 @@ const Inventario = () => {
                     <Text><FontAwesome6 name="camera-rotate" size={30} color="white" /></Text><Text><FontAwesome name="list-ol" size={30} color="white" /></Text>
                 </TouchableOpacity>            
             </Link> 
-            </View>                  
-
-
-
+            </View>                 
                 
         </View>
     )
@@ -65,9 +64,7 @@ const styles = StyleSheet.create({
     },
 
     navbar:{
-        height:60,
         width:'100%',
-        paddingTop:20,
         flexDirection:'row',
         justifyContent:'space-between',
         paddingHorizontal:15,
@@ -91,9 +88,8 @@ const styles = StyleSheet.create({
         right: 0,
         margin: 20,
         marginBottom: 50,
-        height: 215,
+        height: 70,
 
-        
         
     }
 
