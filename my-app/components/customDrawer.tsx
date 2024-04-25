@@ -2,7 +2,7 @@ import React from "react";
 import { DrawerItemList } from "@react-navigation/drawer";
 import { View, Text } from "react-native";
 import { StyleSheet } from "react-native";
-import {useColor} from "../temas/temas"
+import {useColor} from "@temas/temas"
 import { Image } from "react-native";
 
 export default function CustomDrawer(props: any){

@@ -9,7 +9,7 @@ export default function layout() {
   return (
     <Stack>
 
-      <Stack.Screen name="index" options={{
+      <Stack.Screen name="" options={{
         headerShown: false,
         statusBarColor: cores.bgQuaternary }} />
       
@@ -21,7 +21,7 @@ export default function layout() {
 
       <Stack.Screen name="Cadastro" options={{
         headerTitle: "" , 
-        statusBarColor: cores.bgSecondary,
+        statusBarColor: cores.bgSecundary,
         headerTintColor: cores.textColorPrimary,
         headerTransparent: true }} />
 
@@ -30,11 +30,6 @@ export default function layout() {
         statusBarColor: cores.bgQuaternary,
         headerTintColor: cores.textColorPrimary,
         headerTransparent: true }} />
-
-    <Stack.Screen name="TabNav" options={{
-        headerShown: false, 
-    }} />
-
 
     </Stack>
 

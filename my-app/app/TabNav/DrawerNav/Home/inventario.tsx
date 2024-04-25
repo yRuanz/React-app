@@ -10,7 +10,6 @@ const Inventario = () => {
         <View style={styles.container}>
             <StatusBar style="dark"/>
             <View style={styles.navbar}>
-                <Text><Entypo name="menu" size={30} color="black" /></Text><Text>Lista</Text><Text><AntDesign name="search1" size={30} color="black" /></Text>
             </View>
             <View>
                 <ScrollView>

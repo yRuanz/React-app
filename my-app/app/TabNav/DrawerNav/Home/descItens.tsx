@@ -9,25 +9,19 @@ import InputLabel from "@comp/InputLabel";
 const DescricaoItens = () => {
     return(
         <View style={styles.container}>
-            <View style={styles.navbar}>
-                <Cabecalho title="Descrição dos Itens" />
-            </View>
             <View>
                 <Text style={styles.titulotexto}>N° do Inventário</Text>
                 <Text style={styles.textodesc}>9483984</Text>
                 <Text style={styles.titulotexto}>Descrição:</Text>
-
+                <Text style={styles.textodesc}>CADEIRA GIRATÓRIA</Text>
                 <Text style={styles.titulotexto}>Local:</Text>
-
+                <Text style={styles.textodesc}>SALA C13</Text>
                 <Text style={styles.titulotexto}>Responsável:</Text>
-
+                <Text style={styles.textodesc}>CARLOS</Text>
                 <Text style={styles.titulotexto}>Data de Registro:</Text>
-
-            </View>
-            <View style={styles.footer}>
-                <Rodape backgroundColor={"white"} iconColor={"black"} border={false} />
-            </View>
+                <Text style={styles.textodesc}>05/03/2024</Text>
                 
+            </View>      
         </View>
     )
 }
